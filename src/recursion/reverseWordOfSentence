@@ -1,0 +1,22 @@
+// reverse word of sentence : e.g. 'hi to all' ---> 'ih ot lla'
+
+function reverse(str) {
+    if (str.length == 0)
+        return ""
+    return str.slice(-1) + reverse(str.slice(0, -1))
+}
+
+
+function rev(str) {
+    str = str.split(' ')
+    let reversei = ''
+    for (let i = 0; i < str.length; i++) {
+        str[i] = reverse(str[i])
+    }
+    return str.join(' ')
+}
+
+let res = rev('hi to all')
+console.log(res)
+
+
