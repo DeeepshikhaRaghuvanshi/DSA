@@ -12,3 +12,18 @@ function powe(n) {
 
 let res = powe(0)
 console.log(res)
+
+
+
+function powerOfTwo(n) {
+    // console.log(n)
+    if (n == 1 || n == 2)
+        return true
+
+    if (n < 1)
+        return false
+
+    return powerOfTwo(n / 2)
+
+
+}

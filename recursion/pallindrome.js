@@ -4,16 +4,16 @@
 
 
 //2. using recursion
-function isPallindrome(s,l,m){
-    if(l>=m)
-    return true
-    if(s[l]!=s[m])
-    return false
-    return isPallindrome(s,l+1,m-1)
+function isPallindrome(s, l, m) {
+    if (l >= m)
+        return true
+    if (s[l] != s[m])
+        return false
+    return isPallindrome(s, l + 1, m - 1)
 }
 
 let str = "racecar"
-let m = str.length-1
-let a = isPallindrome(str,0,m)
+let m = str.length - 1
+let a = isPallindrome(str, 0, m)
 console.log(a)
 
